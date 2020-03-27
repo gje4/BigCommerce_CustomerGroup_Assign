@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "node-bigcommerce": "^4.0.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "serverless-dotenv-plugin": "^2.3.2"
+  }
+}

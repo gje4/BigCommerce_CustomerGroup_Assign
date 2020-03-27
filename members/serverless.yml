@@ -1,0 +1,16 @@
+service: aws-nodejs
+provider:
+  name: aws
+  runtime: nodejs10.x
+functions:
+  members:
+    handler: handler.members
+    environment:
+      STORE_HASH: { YOUR STORE HASH }
+      BC_CLIENT: { YOUR CLIENT ID }
+      BC_TOKEN: { YOUR TOKEN ID }
+    events:
+      - http:
+          path: members
+          method: post
+          cors: true
